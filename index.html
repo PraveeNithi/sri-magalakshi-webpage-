@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sri Mahalaxmi Hardware</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#F4E8D0;color:#2E2418}
+.hero{position:relative;height:100vh;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:1s}.hero img.active{opacity:1}
+.overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(46,36,24,.6),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:42px}
+.overlay h1{font-family:Cinzel,serif;font-size:clamp(38px,6vw,68px);color:#E5C35A}.overlay p{color:#fff;font-size:18px}
+.wrap{max-width:1200px;margin:auto;padding:45px 18px}h2{font-family:Cinzel,serif;color:#7B5A1F;text-align:center;margin-bottom:24px}
+.tool{width:100%;height:auto;border-radius:22px;display:block;margin:0 0 22px;box-shadow:0 18px 35px rgba(0,0,0,.15)}
+.btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:28px}
+.btn{padding:15px;border-radius:16px;text-align:center;text-decoration:none;font-weight:700;color:#fff}
+.call{background:#D4AF37}.wa{background:#25D366}.insta{background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45)}.email{background:#123C89}.map{background:#1c6c54}.share{background:#8c6239}
+footer{background:#3B2A1A;color:#fff;text-align:center;padding:28px;margin-top:30px}
+</style></head><body>
+<section class="hero"><img src="images/hero1.png" class="active"><img src="images/hero2.png"><div class="overlay"><h1>Sri Mahalaxmi Hardware</h1><p>Doors • Door Fittings • All Hardware Tools</p></div></section>
+<div class="wrap"><h2>Our Products</h2><img src="images/tool1.jpg" class="tool"><img src="images/tool2.jpg" class="tool"><img src="images/tool3.jpg" class="tool"><img src="images/tool4.jpg" class="tool"><img src="images/tool5.jpg" class="tool"><img src="images/tool6.jpg" class="tool"><img src="images/tool7.jpg" class="tool"><img src="images/tool8.jpg" class="tool"><img src="images/tool9.jpg" class="tool"><img src="images/tool10.jpg" class="tool"><img src="images/tool11.jpg" class="tool"><img src="images/tool12.jpg" class="tool"><img src="images/tool13.jpg" class="tool"><img src="images/tool14.jpg" class="tool"><img src="images/tool15.jpg" class="tool"><img src="images/tool16.jpg" class="tool"><img src="images/tool17.jpg" class="tool"><img src="images/tool18.jpg" class="tool"><img src="images/tool19.jpg" class="tool"><img src="images/tool20.jpg" class="tool">
+<div class="btns">
+<a class="btn call" href="tel:9600650607">📞 Call 9600650607</a>
+<a class="btn call" href="tel:6380246462">📞 Call 6380246462</a>
+<a class="btn wa" href="https://wa.me/919600650607">💬 WhatsApp 1</a>
+<a class="btn wa" href="https://wa.me/916380246462">💬 WhatsApp 2</a>
+<a class="btn insta" href="https://instagram.com/srimahalaxmihardwareslm">📸 Instagram</a>
+<a class="btn email" href="mailto:srimahalaxmi2025hardwareslm@gmail.com">✉ Email</a>
+<a class="btn map" href="https://maps.google.com/?q=102 Fort Main Road Shevapet Salem 636002">📍 Address</a>
+<a class="btn share" href="#" onclick="shareShop(event)">🔗 Share Our Shop</a>
+</div></div>
+<footer><h3>Sri Mahalaxmi Hardware</h3><p>102, Fort Main Road, Shevapet, Salem – 636002</p><p>📧 srimahalaxmi2025hardwareslm@gmail.com</p></footer>
+<script>
+const s=document.querySelectorAll('.hero img');let i=0;setInterval(()=>{s[i].classList.remove('active');i=(i+1)%s.length;s[i].classList.add('active');},3500);
+function shareShop(e){e.preventDefault();const d={title:'Sri Mahalaxmi Hardware',text:'Visit Sri Mahalaxmi Hardware',url:location.href};if(navigator.share)navigator.share(d);else{navigator.clipboard.writeText(location.href);alert('Link copied')}}
+</script></body></html>
